@@ -19,8 +19,8 @@ stxDebug::Out() << L"wide text" << std::wstring(L" - std::wstring")      # <1>
 stxDebug::Err() << L"wide text" << std::wstring(L" - std::wstring")      # <2>
   << " - ascii text" << std::string(" - std::string");
 ----
-<1> - send output to std::out stream
-<2> - send output to std::err stream
+<1> - send output to `std::out` stream
+<2> - send output to `std::err` stream
 
 The aim of this task is to make working the following line of code:
 [source,cpp,numbered]
