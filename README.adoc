@@ -1,0 +1,27 @@
+= C++ test task
+
+This is a test task for c++ intermediate developer.
+
+We have small project with two files: `debug_logger.cpp` and `debug_logger.h`.
+
+`debug_logger.h` file contains simple implementation of stxDebug library.
+
+`debug_logger.cpp` uses this library:
+[source,cpp]
+.debug_logger.cpp
+----
+stxDebug::Out() << L"wide text" << std::wstring(L" - std::wstring")
+  << " - ascii text" << std::string(" - std::string");
+stxDebug::Err() << L"wide text" << std::wstring(L" - std::wstring")
+  << " - ascii text" << std::string(" - std::string");
+----
+
+The aim of this task is to make working the following line of code:
+[source,cpp,numbered]
+.debug_logger.cpp
+----
+// stx: task is to uncomment and revive this line
+// stxDebug::File(L"dump.txt") << L"Dump: " << Data(55, "stx data");
+----
+
+*Tags*: `c++`, `template`, `partial specialization`
